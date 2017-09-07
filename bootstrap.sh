@@ -4,7 +4,7 @@ GOSOURCE=https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz
 GOTARGET=/usr/local
 PROFILE=/home/ubuntu/.profile
 
-# download Go tools to $GODEST/go
+# download Go tools to $GOTARGET/go
 curl -sSL $GOSOURCE -o /tmp/go.tar.gz
 tar -xf /tmp/go.tar.gz -C $GOTARGET
 rm /tmp/go.tar.gz
