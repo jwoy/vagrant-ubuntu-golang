@@ -1,5 +1,10 @@
+# Created by Vagrant
 *.log
-.vagrant
+.vagrant/
+
+# Go workspace folders
+bin/
+pkg/
 
 # Binaries for programs and plugins
 *.exe
