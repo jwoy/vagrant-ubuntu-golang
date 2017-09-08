@@ -21,11 +21,12 @@ Features
     $ hello
     Hello, Go examples!
 ```
-#### Create your own repository in the VM:
+#### Create your own program in the VM:
 `github.com/user` is a universally-unique path of your choosing.
+`package-name` is the name of your new program.
 ```
-    $ mkdir $GOPATH/src/[github.com/user]/[program-name]
+    $ mkdir $GOPATH/src/[github.com/user]/[package-name]
     ... create your .go file(s) in the new directory ...
-    $ go install github.com/user/[program-name]
-    $ [program-name]
+    $ go install github.com/user/[package-name]
+    $ [package-name]
 ```
