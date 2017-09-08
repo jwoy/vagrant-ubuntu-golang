@@ -1,2 +1,31 @@
-# vagrant-ubuntu-golang
-A simple setup to work with Go in an Ubuntu VM.
+# Get up and running with Go in Vagrant
+A simple setup to work or play with Go in an Ubuntu VM.
+
+Features
+- Slim as possible &ndash; only the minimal software.
+- Provides you with a workspace according to [recommended practice](https://golang.org/doc/code.html).
+
+### Quick steps
+
+1. Install a supported [Vagrant provider](https://www.vagrantup.com/docs/providers/) such as [VirtualBox](https://www.virtualbox.org/), HyperV, Docker, or VMware.
+2. Download and install [Vagrant](http://www.vagrantup.com/downloads.html).
+3. Clone or [download](https://github.com/jwoy/vagrant-ubuntu-golang/archive/master.zip) this project to a folder on your machine.
+4. Start and connect to the virtual machine:
+```
+    $ vagrant up
+    $ vagrant ssh
+```
+#### Install and run an example in the VM:
+```
+    $ go get github.com/golang/example/hello
+    $ hello
+    Hello, Go examples!
+```
+#### Create your own repository in the VM:
+`github.com/user` is a universally-unique path of your choosing.
+```
+    $ mkdir $GOPATH/src/[github.com/user]/[program-name]
+    ... create your .go file(s) in the new directory ...
+    $ go install github.com/user/[program-name]
+    $ [program-name]
+```
