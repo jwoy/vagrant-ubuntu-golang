@@ -2,6 +2,7 @@
 
 GOSOURCE=https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz
 GOTARGET=/usr/local
+GOPATH=/vagrant/go
 PROFILE=/home/ubuntu/.profile
 
 # download Go tools to $GOTARGET/go
@@ -13,6 +14,6 @@ rm /tmp/go.tar.gz
 printf "\n" >> $PROFILE
 printf "# golang configuration\n" >> $PROFILE
 printf "export GOROOT=$GOTARGET/go\n" >> $PROFILE
-printf "export GOPATH=/vagrant/go\n" >> $PROFILE
-printf "export PATH=\$PATH:$GOTARGET/go/bin:\$GOPATH/bin\n" >> $PROFILE
+printf "export GOPATH=$GOPATH\n" >> $PROFILE
+printf "export PATH=\$PATH:$GOTARGET/go/bin:$GOPATH/bin\n" >> $PROFILE
 
