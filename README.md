@@ -4,6 +4,8 @@
 - Jump right in with Go 1.9 and Ubuntu 16.04 (Xenial).
 - Slim as possible &ndash; only the minimal software.
 - Provides you with a workspace according to [recommended practice](https://golang.org/doc/code.html).
+	- The workspace is at `$HOME/go`, the default for Go.
+	- The `./go` directory on your machine maps to `$HOME/go` on the guest OS.
 
 ### Quick steps
 

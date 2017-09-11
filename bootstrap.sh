@@ -2,7 +2,7 @@
 
 GOSOURCE=https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz
 GOTARGET=/usr/local
-GOPATH=/vagrant/go
+GOPATH=\$HOME/go
 PROFILE=/home/ubuntu/.profile
 
 # download Go tools to $GOTARGET/go
