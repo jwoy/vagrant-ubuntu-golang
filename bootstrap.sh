@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Necessary for most go projects `make test`
+apt-get install -y  make
+
 GOSOURCE=https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz
 GOTARGET=/usr/local
 GOPATH=\$HOME/go
