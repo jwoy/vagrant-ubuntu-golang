@@ -3,7 +3,7 @@
 GOSOURCE=https://dl.google.com/go/go1.12.5.linux-amd64.tar.gz
 GOTARGET=/usr/local
 GOPATH=\$HOME/go
-PROFILE=/home/ubuntu/.profile
+PROFILE=/home/vagrant/.profile
 
 # download Go tools to $GOTARGET/go
 curl -sSL $GOSOURCE -o /tmp/go.tar.gz
