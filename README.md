@@ -1,7 +1,7 @@
 # Get up and running with Go in Vagrant
 
 ### Features
-- Jump right in with Go 1.9 and Ubuntu 16.04 (Xenial).
+- Jump right in with Go 1.12.5 and Ubuntu 18.04 (Bionic).
 - Slim as possible &ndash; only the minimal software.
 - Provides you with a workspace according to [recommended practice](https://golang.org/doc/code.html).
 	- The workspace is at `$HOME/go`, the default for Go.
